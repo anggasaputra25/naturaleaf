@@ -24,15 +24,10 @@
         @stack('styles')
     </head>
     <body>
-        <!-- Navbar -->
-        @include('components.navbar')
 
         <main class="min-h-screen">
             @yield('content')
         </main>
-
-        <!-- Footer -->
-        @include('components.footer')
 
         <!-- Navbar Toggle JS -->
         @stack('scripts')

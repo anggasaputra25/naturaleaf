@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
             <!-- Logo -->
-            <a href="#" class="flex items-center space-x-2">
+            <a href="{{ route('home') }}" class="flex items-center space-x-2">
                 <div class="w-10 h-10 bg-green-600 rounded-xl flex items-center justify-center duration-300">
                     <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2C11.5 2 11 2.19 10.59 2.59L2.59 10.59C1.8 11.37 1.8 12.63 2.59 13.41L10.59 21.41C11.37 22.2 12.63 22.2 13.41 21.41L21.41 13.41C22.2 12.63 22.2 11.37 21.41 10.59L13.41 2.59C13 2.19 12.5 2 12 2M12 4L20 12L12 20L4 12L12 4M12 7C9.24 7 7 9.24 7 12S9.24 17 12 17 17 14.76 17 12 14.76 7 12 7M12 9C13.66 9 15 10.34 15 12S13.66 15 12 15 9 13.66 9 12 10.34 9 12 9Z"/>
@@ -13,8 +13,8 @@
 
             <!-- Desktop Menu -->
             <div class="hidden lg:flex items-center space-x-1">
-                <a href="#" class="px-4 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg font-medium transition-all duration-200">About</a>
-                <a href="#" class="px-4 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg font-medium transition-all duration-200">Reviews</a>
+                <a href="{{ route('home') }}#about" class="px-4 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg font-medium transition-all duration-200">About</a>
+                <a href="{{ route('home') }}#reviews" class="px-4 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg font-medium transition-all duration-200">Reviews</a>
                 <a href="#" class="px-4 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg font-medium transition-all duration-200">Plants</a>
                 <a href="#" class="px-4 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg font-medium transition-all duration-200">Blog</a>
             </div>
@@ -32,7 +32,7 @@
                     </svg>
                     <span class="absolute -top-1 -right-1 w-5 h-5 bg-green-600 text-white text-xs flex items-center justify-center rounded-full">0</span>
                 </a>
-                <a href="#" class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition-all duration-200">
+                <a href="{{ route('login') }}" class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition-all duration-200">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/>
                     </svg>
@@ -54,7 +54,7 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-green-100 shadow-lg">
         <div class="px-6 py-4 space-y-1">
-            <a href="#" class="block px-4 py-3 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg font-medium transition-all duration-200">About</a>
+            <a href="{{ route('home') }}#about" class="block px-4 py-3 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg font-medium transition-all duration-200">About</a>
             <a href="#" class="block px-4 py-3 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg font-medium transition-all duration-200">Reviews</a>
             <a href="#" class="block px-4 py-3 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg font-medium transition-all duration-200">Plants</a>
             <a href="#" class="block px-4 py-3 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg font-medium transition-all duration-200">Blog</a>
@@ -72,7 +72,7 @@
                 </div>
             </div>
             <div class="pt-4 border-t border-green-100">
-                <a href="#" class="block px-4 py-3 bg-green-600 text-white text-center font-semibold rounded-lg shadow-md">
+                <a href="{{ route('login') }}" class="block px-4 py-3 bg-green-600 text-white text-center font-semibold rounded-lg shadow-md">
                     Sign In
                 </a>
             </div>

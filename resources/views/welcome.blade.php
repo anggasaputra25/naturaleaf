@@ -3,6 +3,10 @@
 @section('title', 'Home - Naturaleaf')
 
 @section('content')
+
+<!-- Navbar -->
+@include('components.navbar')
+
 <!-- Hero Section -->
 <section class="relative bg-white min-h-screen py-5">
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -107,7 +111,7 @@
 </section>
 
 <!-- About Us Section -->
-<section class="py-20 bg-white">
+<section class="py-20 bg-white" id="about">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
         <div class="text-center mb-16">
@@ -260,7 +264,7 @@
 </section>
 
 <!-- Reviews Section -->
-<section class="py-20 bg-green-50">
+<section class="py-20 bg-green-50" id="reviews">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
         <div class="text-center mb-16">
@@ -767,4 +771,8 @@
         </div>
     </div>
 </section>
+
+<!-- Footer -->
+@include('components.footer')
+
 @endsection
